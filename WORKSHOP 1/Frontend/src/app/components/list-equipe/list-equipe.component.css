@@ -1,0 +1,66 @@
+/* Styles généraux avec palette violette/fuchsia */
+h2 {
+  text-align: center;
+  color: #777777;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Table stylisée avec dégradé et ombre */
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+  overflow: hidden;
+
+
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s, color 0.3s;
+}
+
+th {
+  background: linear-gradient(90deg, #626262, #000000);
+  color: white;
+}
+
+tr:hover {
+  background: #f9f6f6;
+  color: #1b1b1b;
+}
+
+/* Boutons avec palette violette/fuchsia */
+button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(80deg, #7b7b7b, #2e2e2e);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(80deg, #696969, #262626);
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+button:first-child {
+  background: linear-gradient(80deg, #cfd9e9, #4a4a4a);
+}
+
+button:last-child {
+  background: linear-gradient(80deg, #404040, #000000);
+}

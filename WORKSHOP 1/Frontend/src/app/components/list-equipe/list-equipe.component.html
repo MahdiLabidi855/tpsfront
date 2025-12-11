@@ -1,0 +1,16 @@
+<h2>Liste des équipes</h2>
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Nom</th>
+    <th>Pays</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let equipe of equipes">
+    <td>{{ equipe.nom }}</td>
+    <td>{{ equipe.country }}</td>
+    <td>
+      <button (click)="modifier(equipe)">Modifier</button>
+      <button (click)="supprimer(equipe.id)">Supprimer</button>
+    </td>
+  </tr>
+</table>

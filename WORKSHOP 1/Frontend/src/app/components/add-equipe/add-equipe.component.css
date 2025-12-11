@@ -1,0 +1,97 @@
+/* Conteneur du formulaire avec fond dégradé et bordure animée */
+form {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background: linear-gradient(135deg, #fdfdfd, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Animation au survol avec effet de bordure et déplacement */
+form:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Titre du formulaire avec ombre douce */
+h2 {
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Labels stylés avec transition de couleur */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Inputs modernes avec effet glow sur focus */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #7e7e7e;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #fdfdfd;
+}
+
+/* Focus sur les inputs avec effet glow */
+input:focus {
+  border-color: #3d3d3d;
+  box-shadow: 0 0 8px rgba(38, 38, 38, 0.3);
+  outline: none;
+  background: #ede4ef;
+}
+
+/* Bouton Ajouter stylé avec dégradé et effet hover */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(80deg, #2f2f2f, #242424);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/* Effet au survol du bouton avec léger mouvement et ombre */
+button:hover {
+  background: linear-gradient(80deg, #474647, #484848);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Placeholder stylé */
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+    padding: 25px 20px;
+  }
+}

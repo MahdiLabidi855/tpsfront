@@ -1,0 +1,6 @@
+<!-- Affiche la navbar uniquement si l'utilisateur est connecté -->
+<nav *ngIf="authService.isLoggedIn()">
+  <a routerLink="/list-equipe">Liste des équipes</a>
+  <a routerLink="/add-equipe">Ajouter une équipe</a>
+<button class="logout-btn" (click)="logout()">Déconnexion</button>
+</nav>

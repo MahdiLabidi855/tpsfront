@@ -1,0 +1,47 @@
+nav {
+  background: linear-gradient(90deg, #ca9ad9, #340145);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: linear-gradient(90deg, #494949, #0c0c0c);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a.active {
+  background: linear-gradient(90deg, #3a3a3a, #000000);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.logout-btn {
+  padding: 12px;
+  color: white;
+  background-color: #4a4a4a;
+  font-weight: bold;
+  font-size: 16px;
+border:none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Effet au survol du bouton avec léger mouvement et ombre */
+.logout-btn:hover {
+  background: linear-gradient(80deg, #4a4a4a, #000000);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
